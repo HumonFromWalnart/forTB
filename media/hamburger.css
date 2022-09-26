@@ -1,0 +1,80 @@
+body {
+    margin: 0%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.hamburger {
+    width: 200px;
+    height: 120px;
+    display: flex;
+}
+
+.ham {
+    width: 25px;
+    height: 120px;
+    background-color: blueviolet;
+    box-shadow: 0 0 50px white;
+}
+
+.piece-1 {}
+
+.piece-2 {
+    transform: skew(20deg);
+}
+
+.piece-3 {}
+
+.hamburger:hover .piece-1 {
+    animation: piece-1 0.5s alternate;
+    animation-fill-mode: forwards;
+}
+
+.hamburger:hover .piece-2 {
+    animation: piece-2 0.5s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+    transform: skew(20deg);
+}
+
+.hamburger:hover .piece-3 {
+    animation: piece-3 alternate 0.5s 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes piece-1 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 120px;
+    }
+}
+
+@keyframes piece-2 {
+    from {
+        transform: rotate(-35deg);
+        height: 0px;
+        transform: skew(20deg);
+
+    }
+
+    to {
+        transform: rotate(-35deg);
+        height: 120px;
+        transform: skew(20deg);
+    }
+}
+
+@keyframes piece-3 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 120px;
+    }
+}

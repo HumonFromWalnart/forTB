@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="rgb">
+    <style>
+        .pic {
+            width: 420px;
+            height: 420px;
+        }
+
+        .rgb {
+            animation: container-rgb 3s ease infinite;
+        }
+
+        .rgb-2 {
+            animation: border-rgb 0.8s ease infinite;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+        }
+
+        @keyframes border-rgb {
+            0% {
+                border: 1px solid black;
+            }
+
+            1% {
+                border: 2px solid red;
+            }
+
+            2% {
+                border: 3px solid orangered;
+            }
+
+            3% {
+                border: 4px solid orange;
+            }
+
+            4% {
+                border: 5px solid orange;
+            }
+
+            5% {
+                border: 6px solid yellowgreen;
+            }
+
+            6% {
+                border: 7px solid green;
+            }
+
+            7% {
+                border: 8px solid blue;
+            }
+
+            8% {
+                border: 9px solid skyblue;
+            }
+
+            9% {
+                border: 10px solid blueviolet;
+            }
+
+            10% {
+                border: 9px solid rgb(255, 96, 123);
+            }
+
+            11% {
+                border: 8px solid red;
+            }
+
+            12% {
+                border: 7px solid orangered;
+            }
+
+            13% {
+                border: 6px solid orange;
+            }
+
+            14% {
+                border: 5px solid yellow;
+            }
+
+            15% {
+                border: 4px solid yellowgreen;
+            }
+
+            16% {
+                border: 3px solid green;
+            }
+
+            17% {
+                border: 2px solid blue;
+            }
+
+            18% {
+                border: 1px solid skyblue;
+            }
+
+            19% {
+                border: 2px solid blueviolet;
+            }
+
+            20% {
+                border: 3px solid rgb(255, 96, 123);
+            }
+
+            21% {
+                border: 4px solid red;
+            }
+
+            22% {
+                border: 5px solid orangered;
+            }
+
+            23% {
+                border: 6px solid orange;
+            }
+
+            24% {
+                border: 7px solid yellow;
+            }
+
+            25% {
+                border: 8px solid yellowgreen;
+            }
+
+            26% {
+                border: 9px solid green;
+            }
+
+            27% {
+                border: 10px solid blue;
+            }
+
+            28% {
+                border: 9px solid skyblue;
+            }
+
+            29% {
+                border: 8px solid blueviolet;
+            }
+
+            30% {
+                border: 7px solid rgb(255, 96, 123);
+            }
+
+            31% {
+                border: 6px solid red;
+            }
+
+            32% {
+                border: 5px solid orangered;
+            }
+
+            33% {
+                border: 4px solid orange;
+            }
+
+            34% {
+                border: 3px solid yellow;
+            }
+
+            35% {
+                border: 2px solid yellowgreen;
+            }
+
+            36% {
+                border: 1px solid green;
+            }
+
+            37% {
+                border: 2px solid blue;
+            }
+
+            38% {
+                border: 3px solid skyblue;
+            }
+
+            39% {
+                border: 4px solid blueviolet;
+            }
+
+            40% {
+                border: 5px solid rgb(255, 96, 123);
+            }
+
+            41% {
+                border: 6px solid red;
+            }
+
+            42% {
+                border: 7px solid orangered;
+            }
+
+            43% {
+                border: 8px solid orange;
+            }
+
+            44% {
+                border: 9px solid yellow;
+            }
+
+            45% {
+                border: 10px solid yellowgreen;
+            }
+
+            46% {
+                border: 9px solid green;
+            }
+
+            47% {
+                border: 8px solid blue;
+            }
+
+            48% {
+                border: 7px solid skyblue;
+            }
+
+            49% {
+                border: 6px solid blueviolet;
+            }
+
+            50% {
+                border: 5px solid rgb(255, 96, 123);
+            }
+
+            51% {
+                border: 4px solid red;
+            }
+
+            52% {
+                border: 3px solid orangered;
+            }
+
+            53% {
+                border: 2px solid yellow;
+            }
+
+            54% {
+                border: 1px solid orange;
+            }
+
+            55% {
+                border: 2px solid yellowgreen;
+            }
+
+            56% {
+                border: 3px solid green;
+            }
+
+            57% {
+                border: 4px solid blue;
+            }
+
+            58% {
+                border: 5px solid skyblue;
+            }
+
+            59% {
+                border: 6px solid blueviolet;
+            }
+
+            60% {
+                border: 7px solid white;
+            }
+
+            61% {
+                border: 8px solid red;
+            }
+
+            62% {
+                border: 9px solid orangered;
+            }
+
+            63% {
+                border: 10px solid orange;
+            }
+
+            64% {
+                border: 9px solid yellow;
+            }
+
+            65% {
+                border: 8px solid yellowgreen;
+            }
+
+            66% {
+                border: 7px solid green;
+            }
+
+            67% {
+                border: 6px solid blue;
+            }
+
+            68% {
+                border: 5px solid skyblue;
+            }
+
+            69% {
+                border: 4px solid blueviolet;
+            }
+
+            70% {
+                border: 6px solid pink;
+            }
+
+            71% {
+                border: 5px solid red;
+            }
+
+            72% {
+                border: 4px solid orangered;
+            }
+
+            73% {
+                border: 3px solid orange;
+            }
+
+            74% {
+                border: 2px solid yellow;
+            }
+
+            75% {
+                border: 1px solid yellowgreen;
+            }
+
+            76% {
+                border: 2px solid green;
+            }
+
+            77% {
+                border: 3px solid blue;
+            }
+
+            78% {
+                border: 4px solid skyblue;
+            }
+
+            79% {
+                border: 5px solid blueviolet;
+            }
+
+            80% {
+                border: 6px solid rgb(255, 96, 123);
+            }
+
+            81% {
+                border: 7px solid red;
+            }
+
+            82% {
+                border: 8px solid orangered;
+            }
+
+            83% {
+                border: 9px solid orange;
+            }
+
+            84% {
+                border: 10px solid yellow;
+            }
+
+            85% {
+                border: 9px solid yellowgreen;
+            }
+
+            86% {
+                border: 8px solid green;
+            }
+
+            87% {
+                border: 7px solid blue;
+            }
+
+            88% {
+                border: 6px solid skyblue;
+            }
+
+            89% {
+                border: 5px solid blueviolet;
+            }
+
+            90% {
+                border: 4px solid rgb(255, 96, 123);
+            }
+
+            91% {
+                border: 3px solid red;
+            }
+
+            92% {
+                border: 2px solid orangered;
+            }
+
+            93% {
+                border: 1px solid orange;
+            }
+
+            94% {
+                border: 2px solid yellow;
+            }
+
+            95% {
+                border: 3px solid yellowgreen;
+            }
+
+            96% {
+                border: 4px solid green;
+            }
+
+            97% {
+                border: 5px solid blue;
+            }
+
+            98% {
+                border: 6px solid skyblue;
+            }
+
+            99% {
+                border: 7px solid blueviolet;
+            }
+
+            100% {
+                border: 8px solid rgb(255, 96, 123);
+            }
+        }
+
+        @keyframes container-rgb {
+            0% {
+                background-color: black;
+            }
+
+            1% {
+                background-color: red;
+            }
+
+            2% {
+                background-color: orangered;
+            }
+
+            3% {
+                background-color: orange;
+            }
+
+            4% {
+                background-color: orange;
+            }
+
+            5% {
+                background-color: yellowgreen;
+            }
+
+            6% {
+                background-color: green;
+            }
+
+            7% {
+                background-color: blue;
+            }
+
+            8% {
+                background-color: skyblue;
+            }
+
+            9% {
+                background-color: blueviolet;
+            }
+
+            10% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            11% {
+                background-color: red;
+            }
+
+            12% {
+                background-color: orangered;
+            }
+
+            13% {
+                background-color: orange;
+            }
+
+            14% {
+                background-color: yellow;
+            }
+
+            15% {
+                background-color: yellowgreen;
+            }
+
+            16% {
+                background-color: green;
+            }
+
+            17% {
+                background-color: blue;
+            }
+
+            18% {
+                background-color: skyblue;
+            }
+
+            19% {
+                background-color: blueviolet;
+            }
+
+            20% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            21% {
+                background-color: red;
+            }
+
+            22% {
+                background-color: orangered;
+            }
+
+            23% {
+                background-color: orange;
+            }
+
+            24% {
+                background-color: yellow;
+            }
+
+            25% {
+                background-color: yellowgreen;
+            }
+
+            26% {
+                background-color: green;
+            }
+
+            27% {
+                background-color: blue;
+            }
+
+            28% {
+                background-color: skyblue;
+            }
+
+            29% {
+                background-color: blueviolet;
+            }
+
+            30% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            31% {
+                background-color: red;
+            }
+
+            32% {
+                background-color: orangered;
+            }
+
+            33% {
+                background-color: orange;
+            }
+
+            34% {
+                background-color: yellow;
+            }
+
+            35% {
+                background-color: yellowgreen;
+            }
+
+            36% {
+                background-color: green;
+            }
+
+            37% {
+                background-color: blue;
+            }
+
+            38% {
+                background-color: skyblue;
+            }
+
+            39% {
+                background-color: blueviolet;
+            }
+
+            40% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            41% {
+                background-color: red;
+            }
+
+            42% {
+                background-color: orangered;
+            }
+
+            43% {
+                background-color: orange;
+            }
+
+            44% {
+                background-color: yellow;
+            }
+
+            45% {
+                background-color: yellowgreen;
+            }
+
+            46% {
+                background-color: green;
+            }
+
+            47% {
+                background-color: blue;
+            }
+
+            48% {
+                background-color: skyblue;
+            }
+
+            49% {
+                background-color: blueviolet;
+            }
+
+            50% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            51% {
+                background-color: red;
+            }
+
+            52% {
+                background-color: orangered;
+            }
+
+            53% {
+                background-color: yellow;
+            }
+
+            54% {
+                background-color: orange;
+            }
+
+            55% {
+                background-color: yellowgreen;
+            }
+
+            56% {
+                background-color: green;
+            }
+
+            57% {
+                background-color: blue;
+            }
+
+            58% {
+                background-color: skyblue;
+            }
+
+            59% {
+                background-color: blueviolet;
+            }
+
+            60% {}
+
+            61% {
+                background-color: red;
+            }
+
+            62% {
+                background-color: orangered;
+            }
+
+            63% {
+                background-color: orange;
+            }
+
+            64% {
+                background-color: yellow;
+            }
+
+            65% {
+                background-color: yellowgreen;
+            }
+
+            66% {
+                background-color: green;
+            }
+
+            67% {
+                background-color: blue;
+            }
+
+            68% {
+                background-color: skyblue;
+            }
+
+            69% {
+                background-color: blueviolet;
+            }
+
+            70% {}
+
+            71% {
+                background-color: red;
+            }
+
+            72% {
+                background-color: orangered;
+            }
+
+            73% {
+                background-color: orange;
+            }
+
+            74% {
+                background-color: yellow;
+            }
+
+            75% {
+                background-color: yellowgreen;
+            }
+
+            76% {
+                background-color: green;
+            }
+
+            77% {
+                background-color: blue;
+            }
+
+            78% {
+                background-color: skyblue;
+            }
+
+            79% {
+                background-color: blueviolet;
+            }
+
+            80% {}
+
+            81% {
+                background-color: red;
+            }
+
+            82% {
+                background-color: orangered;
+            }
+
+            83% {
+                background-color: orange;
+            }
+
+            84% {
+                background-color: yellow;
+            }
+
+            85% {
+                background-color: yellowgreen;
+            }
+
+            86% {
+                background-color: green;
+            }
+
+            87% {
+                background-color: blue;
+            }
+
+            88% {
+                background-color: skyblue;
+            }
+
+            89% {
+                background-color: blueviolet;
+            }
+
+            90% {
+                background-color: rgb(255, 96, 123);
+            }
+
+            91% {
+                background-color: red;
+            }
+
+            92% {
+                background-color: orangered;
+            }
+
+            93% {
+                background-color: orange;
+            }
+
+            94% {
+                background-color: yellow;
+            }
+
+            95% {
+                background-color: yellowgreen;
+            }
+
+            96% {
+                background-color: green;
+            }
+
+            97% {
+                background-color: blue;
+            }
+
+            98% {
+                background-color: skyblue;
+            }
+
+            99% {
+                background-color: blueviolet;
+            }
+
+            100% {
+                background-color: rgb(255, 96, 123);
+            }
+        }
+    </style>
+    <audio controls autoplay loop style="display: none;">
+        <source
+            src="Y2Mate.is - (Official) Tower Defense Simulator OST - Hidden Wave-TP2wLKnS-pM-160k-1660323872464.mp3"
+            type="audio/mpeg">
+    </audio>
+    <div class="tower-container rgb"></div>
+    <div class="row">
+        <div class=" col-xl-3 col-lg-6 tower rgb-2"><img class="pic" src="tb-marksman.png"></div>
+        <div class="col-xl-3 col-lg-6 tower rgb-2"><img class="pic" src="tb-plasma-trooper.png"></div>
+        <div class="col-xl-3 col-lg-6 tower rgb-2"><img class="pic" src="tb-sniper.png"></div>
+    </div>
+</body>
+
+</html>
